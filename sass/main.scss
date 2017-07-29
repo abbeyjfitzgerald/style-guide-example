@@ -1,15 +1,418 @@
+
+
+$white: #FFFFFF;
+$gray: #777B7B;
+$gray-text: #2D394A;
+$gray-light: #D5D7DA;
+$gray-lighter: #FAFBFC;
+$gray-blue-light: #F8F8F8;
+$green: #89CE8C;
+$red: #DD7683;
+$color-link: #0072C6;
+$background-gray: #FCFCFC;
+$border-gray: #CECECE;
+$lt-heading-gray: #9F9F9F;
+$placeholder-gray: #BCBCBC;
+$high-risk-text: #EB1B00;
+$med-risk: #F2F20E;
+$icon-color: #95989A;
+$st-transition: all 0.2s ease;
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  font-family: "Nunito", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background-color: $background-gray;
+  margin: 0;
+  color: $gray-text;
+  font-weight: 400;
+}
+
+h1 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: .75rem;
+}
+
+h2 {
+	font-size: .85rem;
+	color: $lt-heading-gray;
+	font-weight: 400;
+}
+
+.search-bar {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+  background-color: $white;
+
+  input {
+    font-family: "Nunito", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: $gray;
+    padding: 8px 2px 8px 14px;
+    border: 1px solid $border-gray;
+    margin: 0;
+    width: 300px;
+    outline: none;
+
+	&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		color: $placeholder-gray;
+		font-size: .75rem;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color: $placeholder-gray;
+	   font-size: .75rem;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: $placeholder-gray;
+		font-size: .75rem;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: $placeholder-gray;
+		font-size: .75rem;
+	}
+	&::-ms-input-placeholder { /* Microsoft Edge */
+	   color: $placeholder-gray;
+	   font-size: .75rem;
+	}
+
+  }
+
+  button {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	background-color: $gray-blue-light;
+	height: 28px;
+	width: 28px;
+	border: none;
+	padding: 0;
+
+	.search-icon {
+	 padding: 7px;
+	 color: $icon-color;
+	 height: 30px;
+	}
+		
+  }
+
+  a {
+    border: 1px solid $gray-blue-light;
+    background: $gray-lighter;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin: 0;
+    position: absolute;
+    color: rgba(109, 112, 113, 0.5);
+    margin-left: -1px;
+    padding: 8px 15px 2px 15px;
+    transition: $st-transition;
+    
+    &:hover {
+      background-color: darken($gray-lighter, 3%);
+    }
+    &:active {
+      background-color: darken($gray-lighter, 10%);
+    }
+  }
+}
+
+.select-wrap {
+	display: inline-block;
+	float: right;
+}
+
+select {
+  color: $gray-text;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Nunito", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  background: #fff;
+  border: 1px solid $border-gray;
+  padding: 8px 14px;
+  margin: 1rem 0;
+  transition: $st-transition;
+  
+  &:hover {
+    background: darken(#fff, 3%);
+  }
+  
+  &:active {
+    background: darken(#fff, 5%);
+  }
+  
+  i {
+    position: relative;
+    top: 4px;
+  }
+
+}
+
+.item-number {
+	font-size: .85rem;
+	margin-right: 1rem;
+	font-weight: 700;
+}
+
+.container {
+  padding: 20px;
+}
+
+table {
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  border: 0;
+  font-size: .85rem;
+
+  tbody tr:first-child {
+  	border: none;
+  }
+	.clicked {
+		background-color: $color-link;
+		color: $white;
+		a, .high-risk {
+			color: $white;
+		}
+
+	}
+  tr {
+    border-bottom: 2px solid $gray-blue-light;
+    background: #fff;
+    &:last-child {
+    	border: none;
+    }
+
+    th {
+      font-size: .85rem;
+      font-weight:  700;
+      background: #FCFCFC;
+      input[type="checkbox"] {
+        & + label {
+         top: 13px; 
+        }
+        &:checked + label:before {
+          top: 0;
+          left: 0px;
+        }
+      }
+      &.system {
+        width: 35%;
+      }
+      &.days {
+        width: 15%;
+      }
+       &.risk {
+        width: 20%;
+      }
+      &.date{
+        width: 15%;
+        padding-right: 20px;
+      }
+    }
+
+    th {
+    	padding: 13px;
+
+    	i {
+		  border-color: $gray-text;
+		  border-style: solid;
+		  border-width: 0 1px 1px 0;
+		  display: inline-block;
+		  margin: 3px;
+		  padding: 3px;
+		}
+
+		.right {
+		    transform: rotate(-45deg);
+		    -webkit-transform: rotate(-45deg);
+		}
+
+		.left {
+		    transform: rotate(135deg);
+		    -webkit-transform: rotate(135deg);
+		}
+
+		.up {
+		    transform: rotate(-135deg);
+		    -webkit-transform: rotate(-135deg);
+		}
+
+		.down {
+		    transform: rotate(45deg);
+		    -webkit-transform: rotate(45deg);
+		}
+    }
+
+    td {
+      padding:  13px;
+      position: relative;
+    }
+    td {
+     /* input[type="checkbox"] + label {
+        top: 20px;
+      }*/
+      a {
+        color: $color-link;
+        text-decoration: none;
+        i {
+          
+        }
+      }
+    }
+  }
+}
+
+.risk-icon {
+	height: 18px;
+	width: 18px;
+	padding: 3px;
+	vertical-align:middle;
+}
+
+.high-icon, .med-icon {
+	background-color: $high-risk-text;
+	display: inline-block;
+	margin-right: 5px;
+
+	img {
+/*		height: 16px;*/
+		
+	}
+}
+
+.med-icon {
+	background-color: $med-risk;
+}
+
+.high-risk {
+	color: $high-risk-text;
+}
+
+.medium-risk {
+
+}
+
+.low-risk {
+
+}
+
+// Typography Styles
+//
+// Colors we use for higlighting states.
+//
+
+//
+// Styleguide Typography.heading-styles
+
+
+// Typography 2 Styles
+//
+// Colors we use for higlighting states.
+//
+
+//
+// Styleguide Typography2.paragraph
+
+
+
+// Highlight Colors
+//
+// Colors we use for higlighting states.
+//
+// $highlight-blue - #1460aa, primary blue
+// $highlight-purple - #674172, secondary purple
+// $highlight-red - #d50000, danger red
+//
+// Styleguide Base.colors
+
+
 // Post Title (this will be the title of your component)
-
+//
 // Large, **in charge**, and centered. (this is the description of your component. you can use markdown in here.)
-
+//
 // Markup (define the markup to be used in your styleguide):
-// <h1 class="post-title">A Post Title</h1>
+//
+//
 
-// Styleguide Components.article.post-title 
-// (ꜛ this controls the organization of your style guide. Here, I'm filing this component inside Components / Article / Post Title/ yyyyyyyyyyyyyyyyyyy) 
+.post-title {
+  font-size: 3em;
+  text-align: center;
+  font-family: fantasy;
+}
 
-.post-title { 
-    font-size: 3em; 
-    text-align: center;
-    font-family: fantasy; 
+
+// Bold Button
+//
+// Use this class for a bolder, stronger looking button.
+//
+// Markup:
+// <button class="btn btn-bold">Click Me</button>
+//
+// Styleguide Components.Buttons.bold
+
+.btn.btn-bold {
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+// Buttons (title, same as before)
+//
+// Various button styles. (description, just as before)
+//
+// Markup: (we add the `{{modifier_class}}` to every element that has a modifier)
+// Link Button
+// <button class="button">Button Element</button>
+// <input class="button {{modifier_class}}" type="button" value="Input Button" />
+//
+// (a new modifiers section)
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// .button--small - A small button.
+// .button--large - A large button.
+//
+// Styleguide Components.button (organization, just as before)
+
+.button {
+  padding: 1em 2em;
+  margin: .5em;
+  display: inline-block;
+  font-size: .9em;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f56476;
+  background-color: #fff;
+  border: 2px solid #f56476;
+  transition: .2s color, .2s background-color, .2s border-color;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #f56476;
+}
+
+.button:focus {
+  color: #3ddc97;
+  border-color: currentColor;
+}
+
+.button--small {
+  font-size: .5em;
+}
+
+.button--large {
+  font-size: 1.5em;
 }
