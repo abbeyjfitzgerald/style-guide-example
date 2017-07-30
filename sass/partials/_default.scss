@@ -1,0 +1,122 @@
+//=================================================
+//    Basic text sizing
+//=================================================
+//    Set your main font size for paragraph
+//
+//    Reference
+//    62.5%  => 10px
+//    68.8%  => 11px
+//    75%    => 12px
+//    81.3%  => 13px
+//    87.5%  => 14px
+//    100%   => 16px
+//    112.5% => 18px
+//    125%   => 20px
+//=================================================
+//    Proportions based on typographic scale
+//    14, 16, 18, 21, 24, 32, 48
+//=================================================
+
+/*
+ * Responsive typography using EMs
+ */
+
+html {
+font-size: 62.5%;
+}
+
+*, ::after, ::before {
+  @include box-sizing(border-box);
+}
+
+html, body {
+  font-family: $default-font-family;
+  font-weight: normal;
+  color: $default-font-color;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #ececec;/* default background color */
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: auto !important;
+  width: 100%;
+  font-family: $default-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $default-font-family-semibold;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h6 {
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+}
+
+body {
+  font-size: 1rem;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  font-size: 1.15rem;
+}
+
+a{
+  color: $ss-md-blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: $ss-darkest-bl;
+}
+
+svg {
+    max-width: 100%;
+}
+
+
+// remove the default focus from webkit and firefox
+:focus {
+  outline: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+
+
+
