@@ -1,32 +1,6 @@
 // Base mixin that contains common imports and framework utilities
 
-// Standard Imports
-// @import "breakpoint";
-@import "compass/css3";
-@import "compass/css3/background-size";
-@import "compass/css3/background-clip";
-@import "compass/css3/border-radius";
-@import "compass/css3/images";
-@import "compass/css3/opacity";
-@import "compass/support";
-@import "compass/utilities/general/clearfix";
-$experimental-support-for-svg: true;  // IE9/Opera gradient support
-$legacy-support-for-ie6: false;
-$legacy-support-for-ie7: false;
-$legacy-support-for-ie8: false;
-$legacy-support-for-mozilla: false;  //pre firefox 3.6
-
 //@import "icons/icons";
-
-// Open Sans font
-@import "../lib/font-open-sans/open-sans";
-// included mixins:
-//
-// open-sans-regular
-// open-sans-italic
-// open-sans-bold
-// open-sans-semibold
-// open-sans-light
 
 $critical:    #E8001C;
 $caution:     #FFC200;
@@ -36,6 +10,7 @@ $mid-gray:    #CCCCCC;
 $light-gray:  #ECECEC;
 $medium-gray: #7C7C7C;
 $medium-dark-gray: #555555;
+$background-gray: #555555;
 $dark-gray:   #898989;
 $ss-lt-gray: #F9F9F9;
 $ss-lt-gray-02: #E8E8E8;

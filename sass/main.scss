@@ -1,3 +1,5 @@
+@import "partials/base";
+@import "partials/default";
 @import "partials/views/views";
 
 $white: #FFFFFF;
@@ -16,7 +18,6 @@ $placeholder-gray: #BCBCBC;
 $high-risk-text: #EB1B00;
 $med-risk: #F2F20E;
 $icon-color: #95989A;
-$st-transition: all 0.2s ease;
 
 * {
 	box-sizing: border-box;
@@ -111,7 +112,6 @@ h2 {
     color: rgba(109, 112, 113, 0.5);
     margin-left: -1px;
     padding: 8px 15px 2px 15px;
-    transition: $st-transition;
     
     &:hover {
       background-color: darken($gray-lighter, 3%);
@@ -138,7 +138,6 @@ select {
   border: 1px solid $border-gray;
   padding: 8px 14px;
   margin: 1rem 0;
-  transition: $st-transition;
   
   &:hover {
     background: darken(#fff, 3%);
@@ -326,7 +325,7 @@ table {
 
 
 
-// Base Colors
+//Base Colors
 //
 // $white - #1460aa, primary blue
 // $highlight-purple - #674172, secondary purple
@@ -367,7 +366,9 @@ table {
 //
 // Markup: (we add the `{{modifier_class}}` to every element that has a modifier)
 // Link Button
-// <button class="button">Button Element</button>
+// <button class="button {{modifier_class}}" value="Submit"></button>
+// <input class="button {{modifier_class}}" type="button" value="Input Button" />
+// <input class="button {{modifier_class}}" type="button" value="Input Button" />
 // <input class="button {{modifier_class}}" type="button" value="Input Button" />
 //
 // (a new modifiers section)
@@ -387,6 +388,22 @@ table {
 // Styleguide Buttons.primary-styles
 
 .button {
+
+  &.primary {
+
+  }
+  &.smaller {
+
+  }
+  &:hover {
+
+  }
+  &:disabled {
+    color: gray;
+  }
+}
+
+.button {
   padding: 1em 2em;
   margin: .5em;
   display: inline-block;
@@ -402,11 +419,16 @@ table {
 
 .button:hover {
   color: #fff;
-  background-color: #f56476;
+  background-color: #89CE8C;
+}
+
+.button:active {
+  color: purple;
+  background-color: #89CE8C;
 }
 
 .button:focus {
-  color: #3ddc97;
+  color: $green;
   border-color: currentColor;
 }
 

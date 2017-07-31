@@ -1,3 +1,79 @@
+/*
+ * Responsive typography using EMs
+ */
+html {
+  font-size: 62.5%; }
+
+html, body {
+  font-family: "Open Sans Regular", Arial, sans-serif;
+  font-weight: normal;
+  color: #3B3B3B;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #ececec;
+  /* default background color */
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: auto !important;
+  width: 100%;
+  font-family: "Open Sans Regular", Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Semibold", Arial, sans-serif; }
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.5rem; }
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 3rem; }
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2.25rem; }
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem; }
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem; }
+
+h6 {
+  font-size: 1.15rem;
+  line-height: 1.75rem; }
+
+body {
+  font-size: 1rem; }
+
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  font-size: 1.15rem; }
+
+a {
+  color: #2C97D4;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
+svg {
+  max-width: 100%; }
+
+:focus {
+  outline: none; }
+
+table {
+  border-spacing: 0; }
+
 /* heading style */
 h1 {
   font-size: 8rem; }
@@ -79,8 +155,7 @@ h2 {
     position: absolute;
     color: rgba(109, 112, 113, 0.5);
     margin-left: -1px;
-    padding: 8px 15px 2px 15px;
-    transition: all 0.2s ease; }
+    padding: 8px 15px 2px 15px; }
     .search-bar a:hover {
       background-color: #f0f3f6; }
     .search-bar a:active {
@@ -100,8 +175,7 @@ select {
   background: #fff;
   border: 1px solid #CECECE;
   padding: 8px 14px;
-  margin: 1rem 0;
-  transition: all 0.2s ease; }
+  margin: 1rem 0; }
   select:hover {
     background: #f7f7f7; }
   select:active {
@@ -216,6 +290,9 @@ table {
   font-weight: bold;
   text-transform: uppercase; }
 
+.button:disabled {
+  color: gray; }
+
 .button {
   padding: 1em 2em;
   margin: .5em;
@@ -231,10 +308,14 @@ table {
 
 .button:hover {
   color: #fff;
-  background-color: #f56476; }
+  background-color: #89CE8C; }
+
+.button:active {
+  color: purple;
+  background-color: #89CE8C; }
 
 .button:focus {
-  color: #3ddc97;
+  color: #89CE8C;
   border-color: currentColor; }
 
 .button--small {
