@@ -305,30 +305,30 @@ table {
 
 }
 
-// Typography Styles
+
+// List Styles
+//
+// Use this class for a bolder, stronger looking button.
+//
+// Markup:
+// <button class="btn btn-bold">Click Me</button>
+//
+// Styleguide Lists.bold
+
+
+// Form Styles
 //
 // Colors we use for higlighting states.
 //
 
 //
-// Styleguide Typography.heading-styles
+// Styleguide Forms.paragraph
 
 
-// Typography 2 Styles
+
+// Base Colors
 //
-// Colors we use for higlighting states.
-//
-
-//
-// Styleguide Typography2.paragraph
-
-
-
-// Highlight Colors
-//
-// Colors we use for higlighting states.
-//
-// $highlight-blue - #1460aa, primary blue
+// $white - #1460aa, primary blue
 // $highlight-purple - #674172, secondary purple
 // $highlight-red - #d50000, danger red
 //
@@ -350,14 +350,7 @@ table {
 }
 
 
-// Bold Button
-//
-// Use this class for a bolder, stronger looking button.
-//
-// Markup:
-// <button class="btn btn-bold">Click Me</button>
-//
-// Styleguide Components.Buttons.bold
+
 
 .btn.btn-bold {
     position: relative;
@@ -383,7 +376,15 @@ table {
 // .button--small - A small button.
 // .button--large - A large button.
 //
-// Styleguide Components.button (organization, just as before)
+// Styleguide Buttons.button (organization, just as before)
+
+// Button Styles
+//
+// Colors we use for higlighting states.
+//
+
+//
+// Styleguide Buttons.primary-styles
 
 .button {
   padding: 1em 2em;
