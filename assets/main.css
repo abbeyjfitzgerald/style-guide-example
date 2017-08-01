@@ -1,3 +1,17 @@
+/*$white:       #FFFFFF;
+$mid-gray:    #CCCCCC;
+$light-gray:  #ECECEC;
+$medium-gray: #7C7C7C;
+$medium-dark-gray: #555555;
+$background-gray: #555555;
+$dark-gray:   #898989;
+$ss-lt-gray: #F9F9F9;
+$ss-lt-gray-02: #E8E8E8;
+$ss-dark-bl:  #0D76BD;
+$ss-darkest-bl:#23527C;
+$ss-md-blue:  #2C97D4;
+$ss-lt-blue:  #C4DEEF;
+$ss-header-blue: #86BBDE;*/
 /*
  * Responsive typography using EMs
  */
@@ -7,7 +21,7 @@ html {
 html, body {
   font-family: "Open Sans Regular", Arial, sans-serif;
   font-weight: normal;
-  color: #3B3B3B;
+  color: #2D394A;
   height: 100%;
   width: 100%;
   position: relative;
@@ -58,7 +72,7 @@ p {
   font-size: 1.15rem; }
 
 a {
-  color: #2C97D4;
+  color: #2D394A;
   text-decoration: none; }
 
 a:hover {

@@ -1,11 +1,31 @@
 // Base mixin that contains common imports and framework utilities
 
-//@import "icons/icons";
+//Base Colors
+//
+// $brand-default-blue - #0072C6, surveyor blue
+// $text - #2D394A, body text default
+// $secondary-text - #9F9F9F, secondary heading gray
+// $light-hover-gray - #EDEDED, default hover
+// $body-background - #F8F8F8, body gray background
+// $critical - #E8001C, critical red
+// $caution - #FFC200, caution yellow
+// $okay - #8DC63F, okay status 
+// $white - #FFFFFF, white
+//
+// Styleguide Base.colors
 
-$critical:    #E8001C;
-$caution:     #FFC200;
-$okay:        #8DC63F;
-$white:       #FFFFFF;
+
+$brand-default-blue: #0072C6;
+$text: #2D394A;
+$light-hover-gray: #EDEDED;
+$body-background: #F8F8F8;
+$critical: #E8001C;
+$caution: #FFC200;
+$okay: #8DC63F;
+$white: #FFFFFF;
+
+
+/*$white:       #FFFFFF;
 $mid-gray:    #CCCCCC;
 $light-gray:  #ECECEC;
 $medium-gray: #7C7C7C;
@@ -18,7 +38,7 @@ $ss-dark-bl:  #0D76BD;
 $ss-darkest-bl:#23527C;
 $ss-md-blue:  #2C97D4;
 $ss-lt-blue:  #C4DEEF;
-$ss-header-blue: #86BBDE;
+$ss-header-blue: #86BBDE;*/
 
 // make sure these mixins are used
 
