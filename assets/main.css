@@ -12,6 +12,7 @@ $ss-darkest-bl:#23527C;
 $ss-md-blue:  #2C97D4;
 $ss-lt-blue:  #C4DEEF;
 $ss-header-blue: #86BBDE;*/
+@import url(fonts.googleapis.com/css?family=Nunito:300,400,600,700,800);
 /*
  * Responsive typography using EMs
  */
@@ -19,7 +20,7 @@ html {
   font-size: 62.5%; }
 
 html, body {
-  font-family: "Open Sans Regular", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
   font-weight: normal;
   color: #2D394A;
   height: 100%;
@@ -33,7 +34,7 @@ html, body {
 body {
   height: auto !important;
   width: 100%;
-  font-family: "Open Sans Regular", Arial, sans-serif; }
+  font-family: "Nunito", Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans Semibold", Arial, sans-serif; }
@@ -91,6 +92,49 @@ table {
 /* heading style */
 h1 {
   font-size: 8rem; }
+
+button {
+  padding: 1rem 2rem;
+  margin: .5rem;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-family: "Open Sans Semibold", Arial, sans-serif, sans-serif;
+  border: none;
+  color: #FFFFFF;
+  background-color: #0072C6;
+  transition: .2s color, .2s background-color, .2s border-color; }
+  button.primary {
+    background-color: pink; }
+  button:disabled {
+    color: gray; }
+  button.full-width {
+    width: 70%;
+    display: block;
+    margin: 0 auto; }
+
+button:hover {
+  color: #fff;
+  background-color: #89CE8C; }
+
+button:active {
+  color: purple;
+  background-color: #89CE8C; }
+
+button:focus {
+  color: #89CE8C;
+  border-color: currentColor; }
+
+.button--small {
+  font-size: .5em; }
+
+.button--large {
+  font-size: 1.5em; }
+
+.btn.btn-bold {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 * {
   box-sizing: border-box; }
@@ -298,42 +342,3 @@ table {
   font-size: 3em;
   text-align: center;
   font-family: fantasy; }
-
-.btn.btn-bold {
-  position: relative;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.button:disabled {
-  color: gray; }
-
-.button {
-  padding: 1em 2em;
-  margin: .5em;
-  display: inline-block;
-  font-size: .9em;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #f56476;
-  background-color: #fff;
-  border: 2px solid #f56476;
-  transition: .2s color, .2s background-color, .2s border-color; }
-
-.button:hover {
-  color: #fff;
-  background-color: #89CE8C; }
-
-.button:active {
-  color: purple;
-  background-color: #89CE8C; }
-
-.button:focus {
-  color: #89CE8C;
-  border-color: currentColor; }
-
-.button--small {
-  font-size: .5em; }
-
-.button--large {
-  font-size: 1.5em; }

@@ -24,6 +24,7 @@ $caution: #FFC200;
 $okay: #8DC63F;
 $white: #FFFFFF;
 
+$bright-pink: #ff00fc;
 
 /*$white:       #FFFFFF;
 $mid-gray:    #CCCCCC;
@@ -40,16 +41,33 @@ $ss-md-blue:  #2C97D4;
 $ss-lt-blue:  #C4DEEF;
 $ss-header-blue: #86BBDE;*/
 
+$gray: #777B7B;
+$gray-text: #2D394A;
+$gray-light: #D5D7DA;
+$gray-lighter: #FAFBFC;
+$gray-blue-light: #F8F8F8;
+$green: #89CE8C;
+$red: #DD7683;
+$color-link: #0072C6;
+$background-gray: #FCFCFC;
+$border-gray: #CECECE;
+$lt-heading-gray: #9F9F9F;
+$placeholder-gray: #BCBCBC;
+$high-risk-text: #EB1B00;
+$med-risk: #F2F20E;
+$icon-color: #95989A;
+
 // make sure these mixins are used
 
 $default-font-size: 1rem;
 $default-font-color:  #3B3B3B;
-$default-font-family: 'Open Sans Regular', Arial, sans-serif;
+$default-font-family: 'Nunito', Arial, sans-serif;
 $default-font-family-semibold: 'Open Sans Semibold', Arial, sans-serif;
 $default-font-family-bold: 'Open Sans Bold', Arial, sans-serif;
 $default-font-family-light: 'Open Sans Light', Arial, sans-serif;
 $secondary-font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $default-body-background: #EEEEEE;
+
 
 // may use these
 

@@ -1,0 +1,90 @@
+// Buttons
+//
+// <h3>Various button styles in the application</h3>
+//
+// <button class="primary" value="Submit">Submit</button>
+// <p>This is the primary button</p>
+// <button class="button--small" type="button" value="Input Button" />Submit</button>
+// <button class="button--large" type="button" value="Input Button" />Submit</button>
+// <button class="button {{modifier_class}}" type="button" value="Input Button" />Submit</button>
+// <button class="primary" type="button" value="Input Button" />Submit</button>
+// <button class="full-width" type="button" value="Input Button" />Submit</button>
+//
+// (a new modifiers section)
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// .button--small - A small button.
+// .button--large - A large button.
+//
+// Styleguide Buttons.button (organization, just as before)
+
+// Button Styles
+//
+// Colors we use for higlighting states.
+//
+
+//
+// Styleguide Buttons.primary-styles
+
+button {
+  padding: 1rem 2rem;
+  margin: .5rem;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-family: $default-font-family-semibold, sans-serif;
+  border: none;
+  color: $white;
+  background-color: $brand-default-blue;
+  transition: .2s color, .2s background-color, .2s border-color;
+
+  &.primary {
+    background-color: pink;
+  }
+  &.smaller {
+
+  }
+  &:hover {
+
+  }
+  &:disabled {
+    color: gray;
+  }
+  &.full-width {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+    
+
+button:hover {
+  color: #fff;
+  background-color: #89CE8C;
+}
+
+button:active {
+  color: purple;
+  background-color: #89CE8C;
+}
+
+button:focus {
+  color: $green;
+  border-color: currentColor;
+}
+
+.button--small {
+  font-size: .5em;
+}
+
+.button--large {
+  font-size: 1.5em;
+}
+
+.btn.btn-bold {
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+}

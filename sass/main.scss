@@ -2,22 +2,7 @@
 @import "partials/default";
 @import "partials/views/views";
 
-$white: #FFFFFF;
-$gray: #777B7B;
-$gray-text: #2D394A;
-$gray-light: #D5D7DA;
-$gray-lighter: #FAFBFC;
-$gray-blue-light: #F8F8F8;
-$green: #89CE8C;
-$red: #DD7683;
-$color-link: #0072C6;
-$background-gray: #FCFCFC;
-$border-gray: #CECECE;
-$lt-heading-gray: #9F9F9F;
-$placeholder-gray: #BCBCBC;
-$high-risk-text: #EB1B00;
-$med-risk: #F2F20E;
-$icon-color: #95989A;
+
 
 * {
 	box-sizing: border-box;
@@ -345,91 +330,8 @@ table {
 
 
 
-.btn.btn-bold {
-    position: relative;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
 
 
 
-// Buttons (title, same as before)
-//
-// Various button styles. (description, just as before)
-//
-// Markup: (we add the `{{modifier_class}}` to every element that has a modifier)
-// Link Button
-// <button class="button {{modifier_class}}" value="Submit"></button>
-// <input class="button {{modifier_class}}" type="button" value="Input Button" />
-// <input class="button {{modifier_class}}" type="button" value="Input Button" />
-// <input class="button {{modifier_class}}" type="button" value="Input Button" />
-//
-// (a new modifiers section)
-// :hover - When user hovers over button.
-// :focus - When button is focused.
-// .button--small - A small button.
-// .button--large - A large button.
-//
-// Styleguide Buttons.button (organization, just as before)
 
-// Button Styles
-//
-// Colors we use for higlighting states.
-//
-
-//
-// Styleguide Buttons.primary-styles
-
-.button {
-
-  &.primary {
-
-  }
-  &.smaller {
-
-  }
-  &:hover {
-
-  }
-  &:disabled {
-    color: gray;
-  }
-}
-
-.button {
-  padding: 1em 2em;
-  margin: .5em;
-  display: inline-block;
-  font-size: .9em;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #f56476;
-  background-color: #fff;
-  border: 2px solid #f56476;
-  transition: .2s color, .2s background-color, .2s border-color;
-}
-
-.button:hover {
-  color: #fff;
-  background-color: #89CE8C;
-}
-
-.button:active {
-  color: purple;
-  background-color: #89CE8C;
-}
-
-.button:focus {
-  color: $green;
-  border-color: currentColor;
-}
-
-.button--small {
-  font-size: .5em;
-}
-
-.button--large {
-  font-size: 1.5em;
-}
