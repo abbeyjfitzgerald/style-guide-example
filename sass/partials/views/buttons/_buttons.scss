@@ -1,32 +1,24 @@
 // Buttons
 //
-// <h3>Various button styles in the application</h3>
+// Button styles can be applied to anything with the `.btn` class applied.
+// However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
 //
-// <button class="primary" value="Submit">Submit</button>
-// <p>This is the primary button</p>
-// <button class="button--small" type="button" value="Input Button" />Submit</button>
-// <button class="button--large" type="button" value="Input Button" />Submit</button>
-// <button class="button {{modifier_class}}" type="button" value="Input Button" />Submit</button>
-// <button class="primary" type="button" value="Input Button" />Submit</button>
-// <button class="full-width" type="button" value="Input Button" />Submit</button>
-//
-// (a new modifiers section)
-// :hover - When user hovers over button.
-// :focus - When button is focused.
-// .button--small - A small button.
-// .button--large - A large button.
-//
-// Styleguide Buttons.button (organization, just as before)
+// Styleguide 1
 
-// Button Styles
-//
-// Colors we use for higlighting states.
-//
 
+// Basic Button Styles
 //
-// Styleguide Buttons.primary-styles
+// :hover       - Hover state.
+// :active      - Active state.
+// .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
+//
+// Markup:
+// <button type="submit" class="button {{modifier_class}}">Button</button>
+// <button type="submit" class="button {{modifier_class}}">Button</button>
+//
+// Styleguide 1.1
 
-button {
+.button {
   padding: 1rem 2rem;
   margin: .5rem;
   display: inline-block;
@@ -35,27 +27,40 @@ button {
   font-family: $default-font-family-semibold, sans-serif;
   border: none;
   color: $white;
-  background-color: $brand-default-blue;
   transition: .2s color, .2s background-color, .2s border-color;
-
-  &.primary {
-    background-color: pink;
-  }
-  &.smaller {
-
-  }
+  background-color: $brand-default-blue;
   &:hover {
-
+    background-color: $brand-dk-blue;
   }
-  &:disabled {
-    color: gray;
+  &:active {
+    background-color: $brand-dk-blue;
   }
-  &.full-width {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
+  &.disabled {
+    background-color: #898989;
+  }
+  &.secondary {
+    
   }
 }
+
+button {
+  
+}
+
+.button { 
+  background-color: $brand-default-blue;
+}
+.button:hover {
+  
+}
+.button:disabled {
+  
+}
+.button.primary {
+  
+}
+
+
 
 
     

@@ -19,6 +19,9 @@ $ss-header-blue: #86BBDE;*/
 html {
   font-size: 62.5%; }
 
+*, ::after, ::before {
+  box-sizing: border-box; }
+
 html, body {
   font-family: "Nunito", Arial, sans-serif;
   font-weight: normal;
@@ -93,7 +96,7 @@ table {
 h1 {
   font-size: 8rem; }
 
-button {
+.button {
   padding: 1rem 2rem;
   margin: .5rem;
   display: inline-block;
@@ -102,16 +105,17 @@ button {
   font-family: "Open Sans Semibold", Arial, sans-serif, sans-serif;
   border: none;
   color: #FFFFFF;
-  background-color: #0072C6;
-  transition: .2s color, .2s background-color, .2s border-color; }
-  button.primary {
-    background-color: pink; }
-  button:disabled {
-    color: gray; }
-  button.full-width {
-    width: 70%;
-    display: block;
-    margin: 0 auto; }
+  transition: .2s color, .2s background-color, .2s border-color;
+  background-color: #0072C6; }
+  .button:hover {
+    background-color: #00599a; }
+  .button:active {
+    background-color: #00599a; }
+  .button.disabled {
+    background-color: #898989; }
+
+.button {
+  background-color: #0072C6; }
 
 button:hover {
   color: #fff;
@@ -135,9 +139,6 @@ button:focus {
   position: relative;
   font-weight: bold;
   text-transform: uppercase; }
-
-* {
-  box-sizing: border-box; }
 
 html {
   font-family: "Nunito", Arial, "Helvetica Neue", Helvetica, sans-serif; }

@@ -39,24 +39,24 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="" href="section-base.html">
+            <a class="kss-state-active" href="section-1.html">
               <span class="kss-nav__ref">1</span>
-              <span class="kss-nav__name">Base</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="kss-state-active" href="section-buttons.html">
-              <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Buttons</span>
             </a>
                 <ul class="kss-nav__subnav">
                     <li class="kss-nav__item ">
-                      <a href="section-buttons.html#kssref-buttons-primary-styles">
-                        <span class="kss-nav__ref">2.1</span>
-                        <span class="kss-nav__name">Buttons</span>
+                      <a href="section-1.html#kssref-1-1">
+                        <span class="kss-nav__ref">1.1</span>
+                        <span class="kss-nav__name">Basic Button Styles</span>
                       </a>
                     </li>
                 </ul>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-base.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Base</span>
+            </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-forms.html">
@@ -83,36 +83,36 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-1" id="kssref-buttons">
+            <header class="kss-section kss-section--depth-1" id="kssref-1">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-buttons">
+              <a class="kss-section__permalink" href="#kssref-1">
                 <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__ref">1</span>
                   <span class="kss-section__name">Buttons</span>
                 </h1>
               </a>
 
+                <div class="kss-section__description"><p>Button styles can be applied to anything with the <code>.btn</code> class applied.
+However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+</div>
 
             </article>
 
 
             </header>
-            <section class="kss-section kss-section--depth-2" id="kssref-buttons-primary-styles">
+            <section class="kss-section kss-section--depth-2" id="kssref-1-1">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-buttons-primary-styles">
+              <a class="kss-section__permalink" href="#kssref-1-1">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">2.1</span>
-                  <span class="kss-section__name">Buttons</span>
+                  <span class="kss-section__ref">1.1</span>
+                  <span class="kss-section__name">Basic Button Styles</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><h4>Various button styles</h4>
-
-<button class="button {{modifier_class}}">Button Name</button></div>
 
             </article>
 
@@ -121,32 +121,32 @@
 
                   <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example">Markup:</div>
+                <div class="kss-modifiers__example"><button type="submit" class="button [modifier class]">Button</button>
+<button type="submit" class="button [modifier class]">Button</button></div>
 
                   <h2 class="kss-modifiers__name">:hover</h2>
 
-                  <p class="kss-modifiers__description">When user hovers over button.</p>
+                  <p class="kss-modifiers__description">Hover state.</p>
 
-                  <div class="kss-modifiers__example">Markup:</div>
-                  <h2 class="kss-modifiers__name">:focus</h2>
+                  <div class="kss-modifiers__example"><button type="submit" class="button pseudo-class-hover">Button</button>
+<button type="submit" class="button pseudo-class-hover">Button</button></div>
+                  <h2 class="kss-modifiers__name">:active</h2>
 
-                  <p class="kss-modifiers__description">When button is focused.</p>
+                  <p class="kss-modifiers__description">Active state.</p>
 
-                  <div class="kss-modifiers__example">Markup:</div>
-                  <h2 class="kss-modifiers__name">.button--small</h2>
+                  <div class="kss-modifiers__example"><button type="submit" class="button pseudo-class-active">Button</button>
+<button type="submit" class="button pseudo-class-active">Button</button></div>
+                  <h2 class="kss-modifiers__name">.disabled</h2>
 
-                  <p class="kss-modifiers__description">A small button.</p>
+                  <p class="kss-modifiers__description">Disabled button. If you use <code>&lt;button&gt;</code> element, that is acceptable to add <code>disabled</code> attribute instead.</p>
 
-                  <div class="kss-modifiers__example">Markup:</div>
-                  <h2 class="kss-modifiers__name">.button--large</h2>
-
-                  <p class="kss-modifiers__description">A large button.</p>
-
-                  <div class="kss-modifiers__example">Markup:</div>
+                  <div class="kss-modifiers__example"><button type="submit" class="button disabled">Button</button>
+<button type="submit" class="button disabled">Button</button></div>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">Markup:</code></pre>
+                  <pre><code class="language-markup">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;button [modifier class]&quot;&gt;Button&lt;/button&gt;
+&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
                 </article>
 
             </section>
