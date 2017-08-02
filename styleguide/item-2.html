@@ -45,10 +45,18 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-2.html">
+            <a class="kss-state-active" href="section-2.html">
               <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Base Colors</span>
             </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-2.html#kssref-2-1">
+                        <span class="kss-nav__ref">2.1</span>
+                        <span class="kss-nav__name">Color Palette</span>
+                      </a>
+                    </li>
+                </ul>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-forms.html">
@@ -57,18 +65,10 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="kss-state-active" href="section-lists.html">
+            <a class="" href="section-lists.html">
               <span class="kss-nav__ref">4</span>
               <span class="kss-nav__name">Lists</span>
             </a>
-                <ul class="kss-nav__subnav">
-                    <li class="kss-nav__item ">
-                      <a href="section-lists.html#kssref-lists-bold">
-                        <span class="kss-nav__ref">4.1</span>
-                        <span class="kss-nav__name">List Styles</span>
-                      </a>
-                    </li>
-                </ul>
           </li>
       </ul>
     </section>
@@ -83,51 +83,24 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-1" id="kssref-lists">
+            <header class="kss-section kss-section--depth-1" id="kssref-2">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-lists">
+              <a class="kss-section__permalink" href="#kssref-2">
                 <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">4</span>
-                  <span class="kss-section__name">Lists</span>
+                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__name">Base Colors</span>
                 </h1>
               </a>
 
+                <div class="kss-section__description"><p>Colors are listed with variable name and HEX value.</p>
+</div>
 
             </article>
 
 
             </header>
-            <section class="kss-section kss-section--depth-2" id="kssref-lists-bold">
-
-            <article class="kss-section__content">
-
-              <a class="kss-section__permalink" href="#kssref-lists-bold">
-                <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">4.1</span>
-                  <span class="kss-section__name">List Styles</span>
-                </h2>
-              </a>
-
-                <div class="kss-section__description"><p>Use this class for a bolder, stronger looking button.</p>
-</div>
-
-            </article>
-
-              <article class="kss-section__modifiers">
-                <h1 class="kss-modifiers__heading">Example</h1>
-
-
-                <div class="kss-modifiers__example"><button class="btn btn-bold">Click Me</button></div>
-
-              </article>
-
-                <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;button class&#x3D;&quot;btn btn-bold&quot;&gt;Click Me&lt;/button&gt;</code></pre>
-                </article>
-
-            </section>
     </section>
     <!-- /documentation. -->
 

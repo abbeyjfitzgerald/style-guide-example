@@ -1,6 +1,6 @@
 // Buttons
 //
-// Button styles can be applied to anything with the `.btn` class applied.
+// Button styles can be applied to anything with the `.button` class applied.
 // However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
 //
 // Styleguide 1
@@ -11,9 +11,9 @@
 // :hover       - Hover state.
 // :active      - Active state.
 // .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
+// .secondary   - For secondary action.
 //
 // Markup:
-// <button type="submit" class="button {{modifier_class}}">Button</button>
 // <button type="submit" class="button {{modifier_class}}">Button</button>
 //
 // Styleguide 1.1
@@ -29,17 +29,23 @@
   color: $white;
   transition: .2s color, .2s background-color, .2s border-color;
   background-color: $brand-default-blue;
-  &:hover {
+  &:hover, &:active {
     background-color: $brand-dk-blue;
   }
   &:active {
-    background-color: $brand-dk-blue;
+    color: $white;
   }
   &.disabled {
     background-color: #898989;
   }
   &.secondary {
-    
+    border: 2px solid $brand-default-blue;
+    color: $brand-default-blue;
+    background-color: $white;
+    padding: .5rem 1rem;
+    &:hover {
+      background-color: $light-hover-gray;
+    }
   }
 }
 
