@@ -41,25 +41,19 @@
           <li class="kss-nav__item">
             <a class="" href="section-1.html">
               <span class="kss-nav__ref">1</span>
-              <span class="kss-nav__name">Buttons</span>
+              <span class="kss-nav__name">Base Colors</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-2.html">
               <span class="kss-nav__ref">2</span>
-              <span class="kss-nav__name">Base Colors</span>
+              <span class="kss-nav__name">Buttons</span>
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-forms.html">
+            <a class="" href="section-3.html">
               <span class="kss-nav__ref">3</span>
-              <span class="kss-nav__name">Forms</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-lists.html">
-              <span class="kss-nav__ref">4</span>
-              <span class="kss-nav__name">Lists</span>
+              <span class="kss-nav__name">Table Styles</span>
             </a>
           </li>
       </ul>
@@ -82,85 +76,45 @@
               <a class="kss-section__permalink" href="#kssref-2-1">
                 <h2 class="kss-section__item kss-section__item--depth-2">
                   <span class="kss-section__ref">2.1</span>
-                  <span class="kss-section__name">Color Palette</span>
+                  <span class="kss-section__name">Basic Button Styles</span>
                 </h2>
               </a>
 
 
-                <ul class="kss-parameters">
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #0072C6, surveyor blue
-
-                    </p>
-                    <code class="kss-parameters__name">$brand-default-blue</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #00599a, darker surveyor blue variation
-
-                    </p>
-                    <code class="kss-parameters__name">$brand-dk-blue</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #2D394A, body text default
-
-                    </p>
-                    <code class="kss-parameters__name">$text</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #9F9F9F, secondary heading gray
-
-                    </p>
-                    <code class="kss-parameters__name">$secondary-text</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #EDEDED, default hover
-
-                    </p>
-                    <code class="kss-parameters__name">$light-hover-gray</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #F8F8F8, body gray background
-
-                    </p>
-                    <code class="kss-parameters__name">$body-background</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #E8001C, critical red
-
-                    </p>
-                    <code class="kss-parameters__name">$critical</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #FFC200, caution yellow
-
-                    </p>
-                    <code class="kss-parameters__name">$caution</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #8DC63F, okay status
-
-                    </p>
-                    <code class="kss-parameters__name">$okay</code>
-                  </li>
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      #FFFFFF, white
-
-                    </p>
-                    <code class="kss-parameters__name">$white</code>
-                  </li>
-                </ul>
             </article>
 
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
+
+                  <h2 class="kss-modifiers__name">Default styling</h2>
+
+                <div class="kss-modifiers__example"><button type="submit" class="button [modifier class]">Button</button></div>
+
+                  <h2 class="kss-modifiers__name">:hover</h2>
+
+                  <p class="kss-modifiers__description">Hover state.</p>
+
+                  <div class="kss-modifiers__example"><button type="submit" class="button pseudo-class-hover">Button</button></div>
+                  <h2 class="kss-modifiers__name">:active</h2>
+
+                  <p class="kss-modifiers__description">Active state.</p>
+
+                  <div class="kss-modifiers__example"><button type="submit" class="button pseudo-class-active">Button</button></div>
+                  <h2 class="kss-modifiers__name">.disabled</h2>
+
+                  <p class="kss-modifiers__description">Disabled button. If you use <code>&lt;button&gt;</code> element, that is acceptable to add <code>disabled</code> attribute instead.</p>
+
+                  <div class="kss-modifiers__example"><button type="submit" class="button disabled">Button</button></div>
+                  <h2 class="kss-modifiers__name">.secondary</h2>
+
+                  <p class="kss-modifiers__description">For secondary action.</p>
+
+                  <div class="kss-modifiers__example"><button type="submit" class="button secondary">Button</button></div>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                </article>
 
             </header>
     </section>

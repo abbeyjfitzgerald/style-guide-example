@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Performance Surveyor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../assets/main.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">Performance Surveyor</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Performance Surveyor</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-1.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Base Colors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-2.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Buttons</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-3.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Table Styles</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-2" id="kssref-3-1">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-3-1">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.1</span>
+                  <span class="kss-section__name">Status Table Styling</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><table>
+<tr>
+<th class="system">System</th>
+<th class="days">Days Remaining</th>
+<th class="risk">Risk</th>
+<th class="date">Forecasted Date</th>
+</tr>
+<tr class="data-table">
+<td><a href="#">IL-BATCH-PROB2S</a></td>
+<td>1</td>
+<td class="high-risk"><span class="high-icon"><img class="risk-icon" src="https://abbeyjfitzgerald.com/wp-content/uploads/2017/08/critical-status-wh.svg" alt="High Risk Icon" /></span>High</td>
+<td>2017-06-11 00:00</td>
+</tr>
+<tr class="data-table">
+<td><a href="#">IL-BATCH-PROD2</a></td>
+<td>1</td>
+<td class="high-risk"><span class="high-icon"><img class="risk-icon" src="https://abbeyjfitzgerald.com/wp-content/uploads/2017/08/critical-status-wh.svg" alt="High Risk Icon" /></span>High</td>
+<td>2017-06-11 00:00</td>
+</tr>
+<tr class="data-table">
+<td><a href="#">IL-BATCH-PROD3</a></td>
+<td>2</td>
+<td><span class="med-icon"><img class="risk-icon" src="https://abbeyjfitzgerald.com/wp-content/uploads/2017/08/caution-status-wh.svg" alt="Medium Risk Icon" /></span>Medium</td>
+<td>2017-06-12 00:00</td>
+</tr>
+<tr class="data-table">
+<td><a href="#">IL-BATCH-PROC1</a></td>
+<td>4</td>
+<td><span class="med-icon"><img class="risk-icon" src="https://abbeyjfitzgerald.com/wp-content/uploads/2017/08/caution-status-wh.svg" alt="Medium Risk Icon" /></span>Medium</td>
+<td>2017-06-14 00:00</td>
+</tr>
+</table></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;table&gt;
+&lt;tr&gt;
+&lt;th class&#x3D;&quot;system&quot;&gt;System&lt;/th&gt;
+&lt;th class&#x3D;&quot;days&quot;&gt;Days Remaining&lt;/th&gt;
+&lt;th class&#x3D;&quot;risk&quot;&gt;Risk&lt;/th&gt;
+&lt;th class&#x3D;&quot;date&quot;&gt;Forecasted Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr class&#x3D;&quot;data-table&quot;&gt;
+&lt;td&gt;&lt;a href&#x3D;&quot;#&quot;&gt;IL-BATCH-PROB2S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td class&#x3D;&quot;high-risk&quot;&gt;&lt;span class&#x3D;&quot;high-icon&quot;&gt;&lt;img class&#x3D;&quot;risk-icon&quot; src&#x3D;&quot;https://abbeyjfitzgerald.com/wp-content/uploads/2017/08/critical-status-wh.svg&quot; alt&#x3D;&quot;High Risk Icon&quot; /&gt;&lt;/span&gt;High&lt;/td&gt;
+&lt;td&gt;2017-06-11 00:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class&#x3D;&quot;data-table&quot;&gt;
+&lt;td&gt;&lt;a href&#x3D;&quot;#&quot;&gt;IL-BATCH-PROD2&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td class&#x3D;&quot;high-risk&quot;&gt;&lt;span class&#x3D;&quot;high-icon&quot;&gt;&lt;img class&#x3D;&quot;risk-icon&quot; src&#x3D;&quot;https://abbeyjfitzgerald.com/wp-content/uploads/2017/08/critical-status-wh.svg&quot; alt&#x3D;&quot;High Risk Icon&quot; /&gt;&lt;/span&gt;High&lt;/td&gt;
+&lt;td&gt;2017-06-11 00:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class&#x3D;&quot;data-table&quot;&gt;
+&lt;td&gt;&lt;a href&#x3D;&quot;#&quot;&gt;IL-BATCH-PROD3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;span class&#x3D;&quot;med-icon&quot;&gt;&lt;img class&#x3D;&quot;risk-icon&quot; src&#x3D;&quot;https://abbeyjfitzgerald.com/wp-content/uploads/2017/08/caution-status-wh.svg&quot; alt&#x3D;&quot;Medium Risk Icon&quot; /&gt;&lt;/span&gt;Medium&lt;/td&gt;
+&lt;td&gt;2017-06-12 00:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class&#x3D;&quot;data-table&quot;&gt;
+&lt;td&gt;&lt;a href&#x3D;&quot;#&quot;&gt;IL-BATCH-PROC1&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;span class&#x3D;&quot;med-icon&quot;&gt;&lt;img class&#x3D;&quot;risk-icon&quot; src&#x3D;&quot;https://abbeyjfitzgerald.com/wp-content/uploads/2017/08/caution-status-wh.svg&quot; alt&#x3D;&quot;Medium Risk Icon&quot; /&gt;&lt;/span&gt;Medium&lt;/td&gt;
+&lt;td&gt;2017-06-14 00:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                </article>
+
+            </header>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="../bundle.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
+</html>

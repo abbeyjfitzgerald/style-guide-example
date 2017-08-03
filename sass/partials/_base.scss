@@ -2,13 +2,14 @@
 //
 // Colors are listed with variable name and HEX value.
 //
-// Styleguide 2
+// Styleguide 1
 
 // Color Palette
 //
 // $brand-default-blue - #0072C6, surveyor blue
 // $brand-dk-blue - #00599a, darker surveyor blue variation
 // $text - #2D394A, body text default
+// $nav-gray - #808B9B, navigation gray
 // $secondary-text - #9F9F9F, secondary heading gray
 // $light-hover-gray - #EDEDED, default hover
 // $body-background - #F8F8F8, body gray background
@@ -17,7 +18,7 @@
 // $okay - #8DC63F, okay status 
 // $white - #FFFFFF, white
 //
-// Styleguide 2.1
+// Styleguide 1.1
 
 
 $brand-default-blue: #0072C6;
@@ -25,6 +26,7 @@ $brand-dk-blue: #00599a;
 $text: #2D394A;
 $light-hover-gray: #EDEDED;
 $body-background: #F8F8F8;
+$nav-gray: #808B9B;
 $critical: #E8001C;
 $caution: #FFC200;
 $okay: #8DC63F;
