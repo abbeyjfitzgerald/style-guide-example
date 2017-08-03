@@ -12,6 +12,7 @@
 // :active      - Active state.
 // .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
 // .secondary   - For secondary action.
+// .login - for login form only
 //
 // Markup:
 // <button type="submit" class="button {{modifier_class}}">Button</button>
@@ -46,6 +47,13 @@
     &:hover {
       background-color: $light-hover-gray;
     }
+  }
+  &.login {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
   }
 }
 

@@ -1,0 +1,111 @@
+// Form Styles
+//
+// This has colors and styles for the login form.
+//
+// Styleguide 4
+
+// Login Form
+//
+//Markup:
+//<form action="#" method="post">
+//<fieldset>
+//<label for="username">Username:</label>
+//<input class="user" type="text" id="username" placeholder="Enter your username or email" />
+//<label for="password">Password:</label>
+//<input class="password" type="password" id="password" placeholder="Enter your password" />
+//<button class="button login" id="sign_in">Log In</button>
+//<span class="warning-text login-error">Password is incorrect.</span>
+//</fieldset>
+//</form>
+//
+// Styleguide 4.1
+
+.form-wrapper {}
+
+form {
+    width: 320px;
+    border-top: 4px solid #F5F5F5;
+    /*    padding: 8% 0 0;
+*/
+    margin: 0 auto 4rem auto;
+    background: #FFFFFF;
+    z-index: 999;
+}
+
+fieldset {
+    border: 0;
+    padding-top: 2.5rem;
+}
+
+label {
+    color: #2D394A;
+    font-weight: 700;
+    font-size: .85rem;
+}
+
+input {
+    width: 100%;
+    margin: 5px 6px 40px 0;
+    /*    padding: 6px 12px;
+*/
+    height: 35px;
+    font-size: 18px;
+    color:  #2D394A;
+    font-family: 'Nunito', sans-serif;
+    width: 295px;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid #9F9F9F;
+    outline: 0;
+}
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #c1c1c1;
+      font-weight: 400;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #c1c1c1;
+      font-weight: 400;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #c1c1c1;
+      font-weight: 400;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #c1c1c1;
+      font-weight: 400;
+    }
+
+input.user {
+    background-image: url('https://abbeyjfitzgerald.com/wp-content/uploads/2017/05/user-login.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 0% 30%;
+}
+
+input.password {
+    background-image: url('https://abbeyjfitzgerald.com/wp-content/uploads/2017/05/locked.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 0% 30%;
+}
+
+.login-btn {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.login-error {
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.warning-text{
+    color: #EB1B00;
+}

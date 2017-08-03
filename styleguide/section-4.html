@@ -45,18 +45,10 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="kss-state-active" href="section-2.html">
+            <a class="" href="section-2.html">
               <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Buttons</span>
             </a>
-                <ul class="kss-nav__subnav">
-                    <li class="kss-nav__item ">
-                      <a href="section-2.html#kssref-2-1">
-                        <span class="kss-nav__ref">2.1</span>
-                        <span class="kss-nav__name">Basic Button Styles</span>
-                      </a>
-                    </li>
-                </ul>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-3.html">
@@ -65,10 +57,18 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-4.html">
+            <a class="kss-state-active" href="section-4.html">
               <span class="kss-nav__ref">4</span>
               <span class="kss-nav__name">Form Styles</span>
             </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-4.html#kssref-4-1">
+                        <span class="kss-nav__ref">4.1</span>
+                        <span class="kss-nav__name">Login Form</span>
+                      </a>
+                    </li>
+                </ul>
           </li>
       </ul>
     </section>
@@ -83,33 +83,32 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-1" id="kssref-2">
+            <header class="kss-section kss-section--depth-1" id="kssref-4">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-2">
+              <a class="kss-section__permalink" href="#kssref-4">
                 <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">2</span>
-                  <span class="kss-section__name">Buttons</span>
+                  <span class="kss-section__ref">4</span>
+                  <span class="kss-section__name">Form Styles</span>
                 </h1>
               </a>
 
-                <div class="kss-section__description"><p>Button styles can be applied to anything with the <code>.button</code> class applied.
-However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+                <div class="kss-section__description"><p>This has colors and styles for the login form.</p>
 </div>
 
             </article>
 
 
             </header>
-            <section class="kss-section kss-section--depth-2" id="kssref-2-1">
+            <section class="kss-section kss-section--depth-2" id="kssref-4-1">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-2-1">
+              <a class="kss-section__permalink" href="#kssref-4-1">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">2.1</span>
-                  <span class="kss-section__name">Basic Button Styles</span>
+                  <span class="kss-section__ref">4.1</span>
+                  <span class="kss-section__name">Login Form</span>
                 </h2>
               </a>
 
@@ -117,41 +116,33 @@ However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code>
             </article>
 
               <article class="kss-section__modifiers">
-                <h1 class="kss-modifiers__heading">Examples</h1>
+                <h1 class="kss-modifiers__heading">Example</h1>
 
-                  <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><button type="submit" class="button [modifier class]">Button</button></div>
+                <div class="kss-modifiers__example"><form action="#" method="post">
+<fieldset>
+<label for="username">Username:</label>
+<input class="user" type="text" id="username" placeholder="Enter your username or email" />
+<label for="password">Password:</label>
+<input class="password" type="password" id="password" placeholder="Enter your password" />
+<button class="button login" id="sign_in">Log In</button>
+<span class="warning-text login-error">Password is incorrect.</span>
+</fieldset>
+</form></div>
 
-                  <h2 class="kss-modifiers__name">:hover</h2>
-
-                  <p class="kss-modifiers__description">Hover state.</p>
-
-                  <div class="kss-modifiers__example"><button type="submit" class="button pseudo-class-hover">Button</button></div>
-                  <h2 class="kss-modifiers__name">:active</h2>
-
-                  <p class="kss-modifiers__description">Active state.</p>
-
-                  <div class="kss-modifiers__example"><button type="submit" class="button pseudo-class-active">Button</button></div>
-                  <h2 class="kss-modifiers__name">.disabled</h2>
-
-                  <p class="kss-modifiers__description">Disabled button. If you use <code>&lt;button&gt;</code> element, that is acceptable to add <code>disabled</code> attribute instead.</p>
-
-                  <div class="kss-modifiers__example"><button type="submit" class="button disabled">Button</button></div>
-                  <h2 class="kss-modifiers__name">.secondary</h2>
-
-                  <p class="kss-modifiers__description">For secondary action.</p>
-
-                  <div class="kss-modifiers__example"><button type="submit" class="button secondary">Button</button></div>
-                  <h2 class="kss-modifiers__name">.login</h2>
-
-                  <p class="kss-modifiers__description">for login form only</p>
-
-                  <div class="kss-modifiers__example"><button type="submit" class="button login">Button</button></div>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;form action&#x3D;&quot;#&quot; method&#x3D;&quot;post&quot;&gt;
+&lt;fieldset&gt;
+&lt;label for&#x3D;&quot;username&quot;&gt;Username:&lt;/label&gt;
+&lt;input class&#x3D;&quot;user&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;username&quot; placeholder&#x3D;&quot;Enter your username or email&quot; /&gt;
+&lt;label for&#x3D;&quot;password&quot;&gt;Password:&lt;/label&gt;
+&lt;input class&#x3D;&quot;password&quot; type&#x3D;&quot;password&quot; id&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Enter your password&quot; /&gt;
+&lt;button class&#x3D;&quot;button login&quot; id&#x3D;&quot;sign_in&quot;&gt;Log In&lt;/button&gt;
+&lt;span class&#x3D;&quot;warning-text login-error&quot;&gt;Password is incorrect.&lt;/span&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
                 </article>
 
             </section>
